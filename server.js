@@ -21,7 +21,7 @@ function filterByQuery(query, animalsArray) {
   }
 
 
-  
+
   if (query.diet) {
     filteredResults = filteredResults.filter(animal => animal.diet === query.diet);
   }
@@ -59,3 +59,4 @@ app.get('/api/animals/:id', (req, res) => {
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
+
