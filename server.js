@@ -19,6 +19,9 @@ function filterByQuery(query, animalsArray) {
       );
     });
   }
+
+
+  
   if (query.diet) {
     filteredResults = filteredResults.filter(animal => animal.diet === query.diet);
   }
